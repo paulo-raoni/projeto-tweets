@@ -1,0 +1,24 @@
+__::Passo a passo para execução do projeto.::__
+
+1- Ter o Node instalado. (https://nodejs.org/en/download/)
+
+2- Em ambos os projetos api-tweets e manipula-tweets, abrir um terminal de comando local e instalar as dependencias com o comando "npm install".
+
+3- Executar o comando "node app.js" em ambos os terminais dos respectivos projetos.
+
+4- Se tudo estiver ok, os 2 projetos estarão rodando em 2 portas: 8081 e 8082.
+
+5- Para checar o retorno dos tweets agrupados por hashtag, basta acessar este endpoint em um browser qualquer: http://localhost:8081/dados-tweets/
+
+6- O endpoint acima faz uma requisição em api-tweets (porta 8081) que retorna os tweets para serem manipulados.
+
+
+
+
+__::Funcionamento do sistema::__
+
+O sistema consiste de 2 módulos (projetos), em que manipula-tweets recebe e agrupa os tweets vindos do módulo api-tweets. Este por sua vez, gera os tweets simulando uma busca em um banco de dados. Ambos os módulos trabalham de forma interdependente como um sistema backend. A chamada no browser simula o frontend.
+
+
+
+AUTOR: PAULO RAONI
